@@ -6,6 +6,11 @@ import (
 )
 
 func main(){
-  r := new(sqwiggle.Request)
-  fmt.Println("%T hello", r)
+  cli := sqwiggle.Client { "FV8dgj7eXcEwjsHP9QgN" }
+  s := cli.Get("messages")
+  fmt.Println("%v", s)
+  s = cli.Get("users")
+  fmt.Println("%v", s)
+  s = cli.Get("rooms")
+  fmt.Println("%v", s)
 }
