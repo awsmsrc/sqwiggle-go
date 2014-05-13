@@ -5,3 +5,4 @@ type Request struct {
 	Method string
 	Args   map[string]string
 }
+
